@@ -1,0 +1,103 @@
+.footer{
+    width: 100%;
+    background-color: #303030;
+    font-size: 20px;
+    color: white;
+}
+.footerList{
+    margin: 5% 5%;
+    display: inline-block;
+    list-style: none;
+}
+.socialList{
+    margin-top: 2%;
+    float: right;
+}
+.footerItemHead{
+    font-size: 22px;
+    color: #ff7d26;
+}
+
+.footerItem{
+    margin: 7px;
+    text-decoration: none;
+    color: white;
+    line-height: 21px;
+}
+.footerItem:hover{
+    border-bottom: 2px solid #ff7d26 ;
+    font-size: 21px;
+    transition-duration: 0.2s;
+}
+
+.socialIcon:hover{
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+}
+
+
+
+.signature{
+    background-color: #202020;
+    padding: 13px;
+}
+.signIcon{
+    width: 45px;
+}
+.signIcon:hover{
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+}
+.signList li{
+    display: inline-block;
+}
+.abc{
+    float: right;
+    margin-top: -5px;
+    margin-right: 2%;
+    margin-bottom: 1%;
+}
+#myName{
+    position: relative;
+    left: 115%;
+    color: #666666;
+    font-size: 30px;
+}
+
+
+
+
+
+/* THE ANIMATION */
+#disLogo{
+    color: #ededed;
+	font-family: "brushed";
+	margin-left: 3%;
+	font-size: 45px;
+}
+#disInfo{
+    float: right;
+    position: relative;
+    top: 50%;
+    right: 3%;
+    color: white;
+    font-size: 30px;
+}
+.discription{
+    height: 50vh;
+    background-color: #707070;
+    position: relative;
+
+}
+.paperPlane{
+    height: 100PX;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
+.paperPlane2{
+    height: 100PX;
+    position: absolute;
+    top: 70%;
+    left: 0%;
+}
