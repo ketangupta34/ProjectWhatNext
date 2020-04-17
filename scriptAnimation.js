@@ -1,4 +1,6 @@
-// Bezier Function 
+var controller = new ScrollMagic.Controller();
+
+// Paper Plane Animation
 const flightPath = {
     curviness: 1.25,
     autoRotate: true,
@@ -10,26 +12,22 @@ const flightPath = {
         {x:400,y:-30},
         {x:500,y: 20},
         {x:700,y:-80},
-        {x:999,y:-150},  
+        {x:1100,y:-150},  
 ]};
-
-// TweenLite 
 var tween = new TweenLite.to('.paperPlane',3,{
     bezier:flightPath,
     ease:Power1.easeInOut,
 });
-
-// ScrollMagic
-var controller = new ScrollMagic.Controller();
 new ScrollMagic.Scene({
     triggerElement:".discription",
-    duration: 300,
+    duration: 350,
     triggerHook: 0.65
 })
 .setTween(tween)
 .addIndicators()
 .addTo(controller);
 
+// Logo coming in Animation
 var logoPath = {
     values:[
         {x:320,y:0}
@@ -46,7 +44,7 @@ new ScrollMagic.Scene({
 .addIndicators()
 .addTo(controller);
 
-
+// Info coming in Animation
 var disPath = {
     values:[
         {x:'-110%',y:0}
@@ -62,8 +60,11 @@ new ScrollMagic.Scene({
 .setTween(tween3)
 .addIndicators()
 .addTo(controller);
-// ScrollReveal
-// ScrollReveal.debug = true;
+
+
+
+
+
 // ScrollReveal().reveal('#disLogo',{
 //     reset: true,
 //     duration: 500,
