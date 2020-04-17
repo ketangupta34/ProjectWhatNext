@@ -8,7 +8,7 @@ the future benifits or harms that our next step can do.
 U CAN VIEW THE WEBSITE ONLINE
 https://ketangupta34.github.io/ProjectWhatNext/
 
-The website is built using simple HTML ans css
+The website is built using simple HTML and CSS
 along with this javascript is used at various point throughout the website to give it an animated look.
 
 External Libararies used:
