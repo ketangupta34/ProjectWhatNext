@@ -72,14 +72,14 @@
 #disLogo{
     color: #ededed;
 	font-family: "brushed";
-	margin-left: 3%;
+	margin-left: -21%;
 	font-size: 45px;
 }
 #disInfo{
     float: right;
     position: relative;
     top: 50%;
-    right: 3%;
+    right: -40%;
     color: white;
     font-size: 30px;
 }
