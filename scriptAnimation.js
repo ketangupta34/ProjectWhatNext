@@ -19,7 +19,7 @@ var tween = new TweenLite.to('.paperPlane',3,{
     ease:Power1.easeInOut,
 });
 new ScrollMagic.Scene({
-    triggerElement:".discription",
+    triggerElement:"#page2",
     duration: 350,
     triggerHook: 0.65
 })
@@ -36,7 +36,7 @@ var tween2 = new TweenLite.to('#disLogo',1,{
     bezier:logoPath
 });
 new ScrollMagic.Scene({
-    triggerElement:".discription",
+    triggerElement:"#page2",
     triggerHook:0.55,
     duration:100
 })
@@ -53,7 +53,7 @@ var tween3 = new TweenLite.to('#disInfo',1,{
     bezier:disPath
 });
 new ScrollMagic.Scene({
-    triggerElement:".discription",
+    triggerElement:"#page2",
     triggerHook:0.55,
     duration:100
 })
@@ -63,18 +63,10 @@ new ScrollMagic.Scene({
 
 
 
-
-
-// ScrollReveal().reveal('#disLogo',{
-//     reset: true,
-//     duration: 500,
-//     delay: 300,
-//     origin: 'left',
-//     distance: '100px'
-// });
-// ScrollReveal().reveal('#disInfo',{
-//     // reset:true,
-//     delay: 300,
-//     origin: 'right',
-//     distance: '100px'
-// });
+ScrollReveal().reveal('#page2',{
+    reset: true,
+    delay: 300,
+    duration: 700,
+    origin: 'bottom',
+    distance: '50px'
+});
