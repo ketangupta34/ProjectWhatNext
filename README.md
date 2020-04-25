@@ -11,12 +11,7 @@ https://ketangupta34.github.io/ProjectWhatNext/
 The website is built using simple HTML and CSS
 along with this javascript is used at various point throughout the website to give it an animated look.
 
-External Libararies used:
-  Jquery
-  TweenLite
-  ScrollMagic
-  ScrollReveal
-  GSAP
+External Libararies used: Jquery, Gsap, scrollMagic
   
 #this website is initially not built to be responsive but anyone can contribute by doing the same.
   
