@@ -1,309 +1,314 @@
-/* 
-color schema
-orange light - #f78300
-orange dark  - #e33a02
-grey         - #969696 rgb 150
-dark grey    - #3c3c3c rgb 60 
-*/
-
-@font-face{
-	font-family:"brushed";
-    src: url('fonts/high performance.otf');
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Roboto Slab', serif;
+#firstPage {
+  background: linear-gradient(to left, #ff874f, #ffbd80);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-#firstPage{
-    background: linear-gradient(to left, #ba7453, #d1a984);
-    height: 100vh;
-    background-attachment: fixed;
-}
-#navbar{
-	z-index: 1;
-	position: fixed;
-    width: 100%;
-    background-color: rgba(60,60,60,0);
-    padding-bottom: 9px;
-}
-#navbar ul{
-	float: right;
-}
-#navbar ul li{
-	display: inline-block;
-	margin-top: 6px;
-	color: #000000;
+#navbar {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(60, 60, 60, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.navItem{
-	font-size: 21px;
-	padding: 0 10px 5px 10px;
-	text-decoration: none;
-	color: #ffffff;
-    line-height: 22px;
-}
-.navItem:hover{
-	font-size: 22px;
-	color: #e33a02;
-	border-bottom: 2px solid #e33a02;
-	transition-duration: 0.2s;
+#navbar h1 {
+  padding-left: 15%;
 }
 
-#fpage{
-    background-color: #969696;
-    border-radius: 20px;
-    width: 65%;
-    text-align: center;
-    position: fixed;
-    top: 30%;
-    left: 3%;
-    padding: 20px 1px;
-    box-shadow: 0 0 25px #969696;
-}
-#fpageLogo{
-    font-family: "brushed";
-    font-size: 60px;
-    color: #ffffff;
-}
-#fpageDisc{
-    font-size: 27px;
-}
-#fpageButton {
-    background-color: #f78300;
-    border-radius: 100px;
-    border: none; 
-    color: white;
-    padding: 20px 55px;
-    font-size: 18px;
-    margin-top: 10px;
-    transform: scale(0.1);
-}
-#fpageButton:hover {
-  background-color: #e33a02;
-  transform: scale(1.1);
-  transition-duration: 0.1s;
-}
-#thinkingMan{
-    width: 350px;
-    float: right;
-    position: relative;
-    top: 21%;
+#navbar ul {
+  padding-right: 15%;
+  float: right;
 }
 
-
-#fpageLogo,#fpageDisc,#fpageButton,#thinkingMan,.navItem,#fpage{
-    opacity: 0;
-}
-#fpageLogo,#fpageDisc{
-    position: relative;
-    top: -30px;
+#navbar ul li {
+  display: inline-block;
 }
 
-
-#discription{
-    height: 50%;
-    position: relative;
-    top: 57%;
+#navbar ul li a {
+  padding: 5px;
+  font-size: 22px;
+  color: white;
+  opacity: 0.7;
+  transition: all 0.2s;
+  text-decoration: none;
 }
-#disLogo{
-    font-family: 'brushed';
-    font-size: 50px;
-    color: #ffffff;
-    opacity: 0;
-    margin-left: 20px;
-}
-#paperPlane{
-    width: 100px;
-    position: absolute;
-    top: 50%;
-    left: -10%;
-}
-#disInfo{
-    float: right;
-    position: relative;
-    font-size: 35px;
-    top: 40%;
-    left: 22%;
-    opacity: 0;
+#navbar ul li a:hover {
+  border: 1px solid white;
+  opacity: 1;
 }
 
-
-.easeLeft{
-	opacity: 0;
-	position: relative;
-	left: -3%;
-}
-.easeRight{
-	opacity: 0;
-	position: relative;
-	left: 3%;
+.homePage {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
 }
 
+#cardBox {
+  background: linear-gradient(to right, #ffd2bd, #ffbd80);
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid white;
+}
+.logo {
+  width: 300px;
+  height: 100px;
+  margin: 10px;
+}
+#pageDiscription {
+  font-size: 25px;
+  margin: 10px;
+}
 
-#clipCard{
-	background-color: #969696;
-  	background-size: cover;
-	padding: 7%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+#pageButton {
+  background-color: #f78300;
+  border-radius: 100px;
+  border: none;
+  color: white;
+  padding: 20px 55px;
+  opacity: 0.8;
+  font-size: 18px;
+  margin-top: 10px;
+  transition: all 0.25s;
 }
-.container{
-	position: relative;
-	width: 1200px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+#pageButton:hover {
+  opacity: 1;
+  transform: scale(1.02);
 }
-.container .box{
-	position: relative;
-	width: 280px;
-	height: 400px;
-	margin-top: -3%;
-	box-sizing: border-box;
-	overflow: hidden;
+
+#thinkingMan {
+  width: 350px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
-.container .box .imgBx{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #000000;
-	clip-path: circle(400px at center 100px);
-	transition: 0.4s;
-	transition-delay: 0.2s;
+
+#fpageLogo,
+#fpageDisc,
+#fpageButton,
+#thinkingMan,
+.navItem,
+#fpage {
+  opacity: 0;
 }
-.container .box:hover .imgBx{
-	clip-path: circle(80px at center 100px);
-	transition-delay: 0s;
+#fpageLogo,
+#fpageDisc {
+  position: relative;
+  top: -30px;
 }
-.container .box .imgBx img{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+
+#discription {
+  height: 50%;
+  position: relative;
+  top: 57%;
 }
-.container .box .content{
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 55%;
-	padding: 20px;
-	box-sizing: border-box;
-	text-align: center;
+#disLogo {
+  font-family: "brushed";
+  font-size: 50px;
+  color: #ffffff;
+  opacity: 0;
+  margin-left: 20px;
 }
-.container .box .content h2{
-	margin: 0;
-	padding: 0;
+#paperPlane {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: -10%;
 }
-.container .box .content a{
-	text-decoration: none;
-	background: #000;
-	color: #fff;
-	padding: 5px;
-	display: inline-block;
+#disInfo {
+  float: right;
+  position: relative;
+  font-size: 35px;
+  top: 40%;
+  left: 22%;
+  opacity: 0;
+}
+
+.easeLeft {
+  opacity: 0;
+  position: relative;
+  left: -3%;
+}
+.easeRight {
+  opacity: 0;
+  position: relative;
+  left: 3%;
+}
+
+#clipCard {
+  background-color: #969696;
+  background-size: cover;
+  padding: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  position: relative;
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container .box {
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin-top: -3%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.container .box .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  clip-path: circle(400px at center 100px);
+  transition: 0.4s;
+  transition-delay: 0.2s;
+}
+.container .box:hover .imgBx {
+  clip-path: circle(80px at center 100px);
+  transition-delay: 0s;
+}
+.container .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container .box .content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 55%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.container .box .content h2 {
+  margin: 0;
+  padding: 0;
+}
+.container .box .content a {
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  padding: 5px;
+  display: inline-block;
 }
 .container .box .content h2,
 .container .box .content p,
-.container .box .content a
-{
-	opacity: 0;
-	transition: 0.5s;
-	transform: translateY(20px);
+.container .box .content a {
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(20px);
 }
-.container .box:hover .content h2
-{
-	opacity: 1;
-	transform: translateY(0);
-	transition-delay: 0.5s
+.container .box:hover .content h2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
 }
-.container .box:hover .content p
-{
-	opacity: 1;
-	transform: translateY(0);
-	transition-delay: 0.7s
+.container .box:hover .content p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.7s;
 }
-.container .box:hover .content a{
-	opacity: 1;
-	transform: translateY(0);
-	transition-delay: 0.9s
+.container .box:hover .content a {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.9s;
 }
-#clipCard .container .box .content a{
-	margin: 10px;
-	padding: 7px 20px;
+#clipCard .container .box .content a {
+  margin: 10px;
+  padding: 7px 20px;
 }
 
-
-
-
-#footer{
-    width: 100%;
-    background-color: #3c3c3c;
-    font-size: 20px;
-    color: white;
+#footer {
+  width: 100%;
+  background-color: #3c3c3c;
+  font-size: 20px;
+  color: white;
 }
-.footerList{
-    margin: 5% 5%;
-    display: inline-block;
-    list-style: none;
+.footerList {
+  margin: 5% 5%;
+  display: inline-block;
+  list-style: none;
 }
-.socialList{
-    margin-top: 2%;
-    float: right;
+.socialList {
+  margin-top: 2%;
+  float: right;
 }
-.footerItemHead{
-    font-size: 22px;
-    color: #ff7d26;
+.footerItemHead {
+  font-size: 22px;
+  color: #ff7d26;
 }
 
-.footerItem{
-    margin: 7px;
-    text-decoration: none;
-    color: white;
-    line-height: 21px;
+.footerItem {
+  margin: 7px;
+  text-decoration: none;
+  color: white;
+  line-height: 21px;
 }
-.footerItem:hover{
-    border-bottom: 2px solid #ff7d26 ;
-    font-size: 21px;
-    transition-duration: 0.2s;
-}
-
-.socialIcon:hover{
-    transform: scale(1.2);
-    transition-duration: 0.3s;
+.footerItem:hover {
+  border-bottom: 2px solid #ff7d26;
+  font-size: 21px;
+  transition-duration: 0.2s;
 }
 
+.socialIcon:hover {
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+}
 
-
-#signature{
-    background-color: #202020;
-    padding: 1%;
+#signature {
+  background-color: #202020;
+  padding: 1%;
 }
-.signIcon{
-    width: 40px;
+.signIcon {
+  width: 40px;
 }
-.signIcon:hover{
-    transform: scale(1.1);
-    transition-duration: 0.3s;
+.signIcon:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
 }
-#signList li{
-    display: inline-block;
+#signList li {
+  display: inline-block;
 }
-.signatureItem{
-    float: right;
-    margin-top: -5px;
-    margin-right: 2%;
+.signatureItem {
+  float: right;
+  margin-top: -5px;
+  margin-right: 2%;
 }
-#myName{
-    position: relative;
-    left: 115%;
-    color: #666666;
-    font-size: 30px;
+#myName {
+  position: relative;
+  left: 115%;
+  color: #666666;
+  font-size: 30px;
 }
