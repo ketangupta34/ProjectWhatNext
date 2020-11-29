@@ -18,7 +18,7 @@ dark grey    - #3c3c3c rgb 60
 }
 
 #firstPage{
-    background-color: #f78300;
+    background-color: linear-gradient(to left, #ba7453, #d1a984);
     height: 100vh;
     background-attachment: fixed;
 }
