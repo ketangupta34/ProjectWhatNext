@@ -1,11 +1,13 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
+  color: #fff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #firstPage {
-  background: linear-gradient(to left, #ff874f, #ffbd80);
+  background: #1d1d1d;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -21,19 +23,38 @@
   left: 0;
   width: 100%;
   height: 60px;
-  background-color: rgba(60, 60, 60, 0);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.navSignIn,
+.navSignUp {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 25px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+
+.navSignIn:hover,
+.navSignUp:hover {
+  transform: scale(1.07);
+  transition: all 0.2s;
+}
+
+.navSignIn {
+  background-color: transparent;
+}
+
+.navSignUp {
+  color: #000;
 }
 
 #navbar h1 {
-  padding-left: 15%;
-}
-
-#navbar ul {
-  padding-right: 15%;
-  float: right;
+  font-size: 30px;
 }
 
 #navbar ul li {
@@ -41,26 +62,22 @@
 }
 
 #navbar ul li a {
-  padding: 5px;
-  font-size: 22px;
-  color: white;
-  opacity: 0.7;
-  transition: all 0.2s;
+  padding: 10px;
+  font-size: 15px;
   text-decoration: none;
 }
 #navbar ul li a:hover {
-  border: 1px solid white;
-  opacity: 1;
+  border-bottom: 2px solid white;
 }
 
 .homePage {
   width: 70%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: absolute;
   bottom: 0;
+  top: 0;
 }
 
 #cardBox {
@@ -105,16 +122,17 @@
 }
 
 /* initial css for homepage on loading */
-#fpageLogo,
-#fpageDisc,
-#fpageButton,
+#pageLogo,
+#pageDiscription,
+#pageButton,
 #thinkingMan,
 .navItem,
-#fpage {
+#cardBox {
   opacity: 0;
 }
-#fpageLogo,
-#fpageDisc {
+
+#pageLogo,
+#pageDiscription {
   position: relative;
   top: -30px;
 }
