@@ -5,7 +5,7 @@ This website is build with a vision that can help others in answering the Questi
 This is a question that comes to ones mind at many point of our lives but is really difficult to answer without knowing 
 the future benifits or harms that our next step can do.
 
-U CAN VIEW THE WEBSITE ONLINE
+VIEW THE WEBSITE ONLINE
 https://ketangupta34.github.io/ProjectWhatNext/
 
 The website is built using simple HTML and CSS
