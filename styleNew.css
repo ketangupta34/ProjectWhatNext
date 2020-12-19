@@ -25,13 +25,19 @@
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.navButtons {
+  margin-right: 10%;
+  display: flex;
+  align-items: center;
 }
 
 .navSignIn,
 .navSignUp {
   cursor: pointer;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
   padding: 10px 25px;
   border: none;
@@ -53,8 +59,10 @@
   color: #000;
 }
 
-#navbar h1 {
-  font-size: 30px;
+.navLogo {
+  margin-left: 10%;
+  width: 130px;
+  height: 50px;
 }
 
 #navbar ul li {
@@ -63,11 +71,40 @@
 
 #navbar ul li a {
   padding: 10px;
-  font-size: 15px;
+  font-size: 14px;
   text-decoration: none;
 }
 #navbar ul li a:hover {
   border-bottom: 2px solid white;
+}
+
+.menuButton {
+  display: none;
+  width: 35px;
+  height: 35px;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 700px) {
+  .navSignIn,
+  .navSignUp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .navLogo {
+    margin-left: 5%;
+  }
+  .navButtons {
+    margin-right: 5%;
+  }
+  .menuButton {
+    display: block;
+  }
+  #navbar > ul {
+    display: none;
+  }
 }
 
 .homePage {
